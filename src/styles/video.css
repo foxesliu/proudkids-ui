@@ -1,0 +1,42 @@
+.video-js .vjs-big-play-button {
+  width: 72px;
+  height: 72px;
+  border-radius: 100%;
+  z-index: 100;
+
+  background-color: #ffffff;
+  border: solid 1px #979797;
+}
+
+.video-js .vjs-big-play-button：hover {
+  background-color: #ffffff;
+}
+
+.vjs-big-play-button {
+  border: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vjs-custom-skin > .video-js .vjs-big-play-button {
+  background-color: #ffffff !important;
+}
+
+.vjs-icon-play, .video-js .vjs-big-play-button .vjs-icon-placeholder:before, .video-js .vjs-play-control .vjs-icon-placeholder {
+  color: #91e224;
+  /*width: 22px;*/
+  /*height: 27px;*/
+}
+
+.video-js .vjs-control-text {
+  display: none !important;
+  visibility: hidden;
+}
+
+.video-js.vjs-fluid,
+.video-js.vjs-16-9,
+.video-js.vjs-4-3 {
+  height: 100%;
+}
+

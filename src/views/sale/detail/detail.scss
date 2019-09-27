@@ -1,0 +1,31 @@
+@import "./common.scss";
+@import "./mixin.scss";
+
+
+/* 容器padding */
+$container-padding:18px;
+
+/* 容器主题背景色 */
+$bg-theme: #fafafa;
+
+/* 按钮背景色 */
+$bg-btn: #ff8636;
+
+/* 按钮背景色 */
+$hover-bg-btn:#FFA76D;
+
+
+/*去除滚动条*/
+.el-table__body-wrapper {
+  margin-top:1px!important;
+  overflow: hidden!important;
+}
+//.el-table__body-wrapper, .el-table__footer-wrapper, .el-table__header-wrapper{
+//  width: 100%;
+//}
+
+.mb18{margin-bottom: 18px;}
+.ml18{margin-left: 18px;}
+.mt18{margin-top: 18px;}
+
+

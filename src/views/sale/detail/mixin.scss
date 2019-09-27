@@ -1,0 +1,133 @@
+/* 容器 */
+@mixin detail-container{//@mixin声明
+  width: 100%;
+  height: 100%;
+  padding: $container-padding;
+  background: $bg-theme;
+}
+
+@mixin btn{//@el-btn调用
+  .el-button {
+    color: white;
+    background-color: $bg-btn;
+    border: 0;
+  }
+
+  .el-button:hover, .el-button:focus {
+    background-color: $hover-bg-btn;
+  }
+}
+
+@mixin contCenter {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+@mixin pic($url, $width, $height) {
+	width: $width;
+	height: $height;
+	background-image: url($url);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@mixin borderRadius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin allcover{
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+@mixin center {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin ct {
+	position: absolute;
+	top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin cl {
+	position: absolute;
+	left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin wh($width, $height){
+	width: $width;
+	height: $height;
+}
+
+@mixin font($size, $line-height, $family: 'Microsoft YaHei') {
+	font: #{$size}/#{$line-height} $family;
+}
+
+@mixin sc($size, $color){
+	font-size: $size;
+	color: $color;
+}
+
+@mixin fj($type: space-between){
+	display: flex;
+	justify-content: $type;
+}
+
+// @mixin placeHolder($color: #888) {
+// 	input::-webkit-input-placeholder { /* WebKit browsers */
+// 		color:    $color;
+// 	}
+// 	input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+// 		color:    $color;
+// 	}
+// 	input::-moz-placeholder { /* Mozilla Firefox 19+ */
+// 		color:    $color;
+// 	}
+// 	input:-ms-input-placeholder { /* Internet Explorer 10+ */
+// 		color:    $color;
+// 	}
+// }
+
+// @mixin loading() {
+// 	animation: circle 3s infinite linear;
+// 	-webkit-animation: circle 3s infinite linear;
+// 	@keyframes circle{
+// 		0%{ transform:rotate(0deg); }
+// 		100%{ transform:rotate(360deg); }
+// 	}
+// 	@-webkit-keyframes circle{
+// 		0%{ transform:rotate(0deg); }
+// 		100%{ transform:rotate(360deg); }
+// 	}
+// }
+
+// @mixin gradual($start: hsl(333, 87%, 69%) , $end: #B2217D) {
+// 	background-image: -webkit-linear-gradient(top, $start, $end); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+// 	background-image:    -moz-linear-gradient(top, $start, $end); /* For Firefox (3.6 to 15) */
+// 	background-image:      -o-linear-gradient(top,$start, $end); /* For old Opera (11.1 to 12.0) */
+// 	background-image:         linear-gradient(to bottom, $start, $end); /* Standard syntax; must be last */
+// }
+
+// @mixin tips(){
+// 	padding: 5% 0;
+// 	@include sc(0.14rem, #fff);
+// 	opacity: 0.6;
+// 	line-height: 0.2rem;
+// }
+// @mixin btn($color: #333, $size: .16rem){
+// 	padding: .06rem .15rem;
+// 	background: #f7f7f7;
+// 	border: 1px solid #dddee1;
+// 	@include sc($size, $color);
+// }
